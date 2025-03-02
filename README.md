@@ -1,21 +1,18 @@
-FOOD-APP
+# FOOD-APP
 
 A simple food application built with Node.js, Express, and MongoDB.
 
-Features
+## Features
 
-User authentication with JWT
+- User authentication with JWT
+- Secure password hashing with bcrypt
+- CRUD operations for users and contacts
+- Token validation middleware
+- Environment configuration with dotenv
 
-Secure password hashing with bcrypt
+## Folder Structure
 
-CRUD operations for users and contacts
-
-Token validation middleware
-
-Environment configuration with dotenv
-
-Folder Structure
-
+```
 FOOD-APP/
 │── config/
 │   ├── dbConnection.js        # Database connection setup
@@ -36,53 +33,60 @@ FOOD-APP/
 │── constants.js               # Constants used in the app
 │── package.json               # Dependencies and scripts
 │── server.js                  # Main entry point of the app
+```
 
-Installation
+## Installation
 
-Clone the repository:
+1. Clone the repository:
 
-git clone https://github.com/yourusername/food-app.git
-cd food-app
+   ```sh
+   git clone https://github.com/yourusername/food-app.git
+   cd food-app
+   ```
 
-Install dependencies:
+2. Install dependencies:
 
-npm install
+   ```sh
+   npm install
+   ```
 
-Create a .env file in the root directory and configure environment variables:
+3. Create a `.env` file in the root directory and configure environment variables:
 
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+   ```
+   PORT=5001
+   CONNECTION_STRING=your_mongodb_connection_string
+   ACCESS_TOKEN_SECRET=your_secret_key
+   ```
 
-Start the server:
+4. Start the server:
 
-Development mode:
+   - Development mode:
 
-npm run dev
+     ```sh
+     npm run dev
+     ```
 
-Production mode:
+   - Production mode:
 
-npm start
+     ```sh
+     npm start
+     ```
 
-Technologies Used
+## Technologies Used
 
-Node.js
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- JWT Authentication
+- bcrypt for password hashing
+- dotenv for environment variables
+- Nodemon for development
 
-Express.js
+## Author
 
-MongoDB & Mongoose
+[kalanirasa](https://github.com/kalanirasa)
 
-JWT Authentication
-
-bcrypt for password hashing
-
-dotenv for environment variables
-
-Nodemon for development
-
-Author
-
-kalanirasa
-
-License
+## License
 
 This project is licensed under the ISC License.
+
